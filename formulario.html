@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <form class="formulario" id="formulario">
+
+            <!-- Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label"  for="nombre">Nombre Completo</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="nombre" id="nombre" class="formulario__input"
+                        placeholder="Ingresar Nombre Completo">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Este campo solo admite letras.</p>
+            </div>
+
+            <!-- Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellidos Completos</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                        placeholder="Ingresar Apellido Completo">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Este campo solo admite letras.</p>
+            </div>
+
+            <!-- Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Asegurese de introducir correctamente el correo electronico.</p>
+            </div>
+
+            <!-- Telefono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="935279304">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Rellene correctamente.</p>
+            </div>
+
+            <!-- Direccion -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Dirección</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion"
+                        placeholder="AV P. DE LA INDEPENDENCIA 1764">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">En este campo solo puede introducir contener letras, numeros, puntos.</p>
+            </div>
+
+            <!-- Ciudad -->
+            <div class="formulario__grupo" id="grupo__ciudad">
+                <label for="ciudad" class="formulario__label">Ciudad</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="ciudad" id="ciudad"
+                        placeholder="Lima">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Este campo solo admite letras.</p>
+            </div>
+
+            <!-- Distrito -->
+            <div class="formulario__grupo" id="grupo__distrito">
+                <label for="distrito" class="formulario__label">Distrito</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="distrito" id="distrito"
+                        placeholder="San Juan de Lurigancho">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Este campo solo admite letras.</p>
+            </div>
+
+            <!-- Codigo Postal -->
+            <div class="formulario__grupo" id="grupo__postal">
+                <label for="cpostal" class="formulario__label">Codigo Postal</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="cpostal" id="cpostal" placeholder="15112">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Rellene correctamente.</p>
+            </div>
+
+            <!-- DNI -->
+            <div class="formulario__grupo" id="grupo__dni">
+                <label for="dni" class="formulario__label">DNI</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="dni" id="dni" placeholder="74836521">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Rellene correctamente.</p>
+            </div>
+
+            <!-- Presupuesto -->
+            <div class="formulario__grupo" id="grupo__presupuesto">
+                <label for="presupuesto" class="formulario__label">Presupuesto S/</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="presupuesto" id="presupuesto" placeholder="2638">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Rellene correctamente.</p>
+            </div>
+
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+
+        </form>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
